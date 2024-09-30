@@ -1,0 +1,39 @@
+{
+  "bookings": [
+    {
+      "id": "1",
+      "name": "john",
+      "source": "Pune",
+      "destination": "Banglore",
+      "travelDate": "2024-11-01"
+    },
+    {
+      "id": "2",
+      "name": "sam",
+      "source": "Pune",
+      "destination": "Mumbai",
+      "travelDate": "2024-02-14"
+    },
+    {
+      "id": "3",
+      "name": "Mark",
+      "source": "Delhi",
+      "destination": "Banglore",
+      "travelDate": "2024-04-15"
+    },
+    {
+      "id": "4",
+      "name": "mikle",
+      "source": "Uttarparadesh",
+      "destination": "Chennai",
+      "travelDate": "2024-03-31"
+    },
+    {
+      "id": "5",
+      "name": "suzen",
+      "source": "surat",
+      "destination": "Hariyana",
+      "travelDate": "2024-01-14"
+    }
+  ]
+}

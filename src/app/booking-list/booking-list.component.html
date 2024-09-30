@@ -1,0 +1,31 @@
+<div class="container">
+
+    <h4 class="text-center mt-4">Booking Details</h4>
+    <button type="button" class="btn btn-primary" routerLink="/bus/create-booking">Create Booking</button>
+    <table class="table table-bordered mt-4">
+
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Source</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let booking of bookingList;let i=index">
+                <th>{{booking.id}}</th>
+                <th>{{booking.name}}</th>
+                <th>{{booking.source}}</th>
+                <th>{{booking.destination}}</th>
+                <th>{{booking.travelDate}}</th>
+                <th>
+                    <a routerLink="" (click)="editBooking(booking.id)">Edit</a>&nbsp;
+                    <a routerLink="" (click)="deleteBooking()">Delete</a>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>

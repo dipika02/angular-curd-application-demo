@@ -1,0 +1,36 @@
+<p>edit-booking works!</p>
+<h4 class="text-center mt-2 mb-2">Booking Form</h4>
+<div class="container w-50 m-auto">
+    <div class="row">
+        <form class="border" (ngSubmit)="upadatebooking()">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="bookingObj.name">
+
+            </div>
+            <div class="mb-3">
+                <label for="source" class="form-label">Source</label>
+                <select class="form-select" id="source" name="source" [(ngModel)]="bookingObj.source">
+                    <option selected>Select city</option>
+                    <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+                  </select>
+            </div>
+            <div class="mb-3 dropdown">
+                <label for="destination" class="form-label">Destination</label>
+                <select class="form-select" id="destination" name="destination" [(ngModel)]="bookingObj.destination">
+                <option selected>Select city</option>
+                <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" name="travelDate" [(ngModel)]="bookingObj.travelDate">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-left:auto">Submit</button>
+        </form>
+
+    </div>
+
+</div>
